@@ -14,8 +14,8 @@ data "aws_ami" "ubuntu" { # ищем последнюю версию убунт�
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "example" {}
-resource "null_resource" "example" {}
+resource "null_resource" "example_1" {}
+resource "null_resource" "example_2" {}
 
 resource "aws_instance" "ec2_instance" {
   ami                    = data.aws_ami.ubuntu.id
