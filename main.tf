@@ -5,6 +5,7 @@ provider "aws" {
   profile = "tf_admin_1" # название профиля задано командой "aws configure" на локальной машине
 }
 
+
 data "aws_ami" "ubuntu" { # ищем последнюю версию убунту
   most_recent = true
   filter {
