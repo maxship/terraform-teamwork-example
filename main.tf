@@ -5,6 +5,7 @@ provider "aws" {
   profile = "tf_admin_1" # название профиля задано командой "aws configure" на локальной машине
 }
 
+
 data "aws_ami" "ubuntu" { # ищем последнюю версию убунту
   most_recent = true
   filter {
@@ -13,7 +14,6 @@ data "aws_ami" "ubuntu" { # ищем последнюю версию убунт�
   }
   owners = ["099720109477"] # Canonical
 }
-
 
 resource "aws_instance" "ec2_instance" {
   ami                    = data.aws_ami.ubuntu.id
