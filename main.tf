@@ -17,6 +17,7 @@ data "aws_ami" "ubuntu" { # ищем последнюю версию убунт�
 resource "null_resource" "example_1" {}
 resource "null_resource" "example_2" {}
 
+
 resource "aws_instance" "ec2_instance" {
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = local.ec2_instance_type_map[terraform.workspace]
