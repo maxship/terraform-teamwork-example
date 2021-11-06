@@ -15,6 +15,7 @@ data "aws_ami" "ubuntu" { # ищем последнюю версию убунт�
 }
 
 resource "null_resource" "example" {}
+resource "null_resource" "example" {}
 
 resource "aws_instance" "ec2_instance" {
   ami                    = data.aws_ami.ubuntu.id
