@@ -1,6 +1,0 @@
-gh-user: "maxship"
-atlantis-url: "https://6b49-92-124-135-190.ngrok.io"
-gh-token: "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"
-gh-webhook-secret: "oR1Og9YbF3RoexyvVbUkCAft1"
-repo-allowlist: "github.com/maxship/terraform-teamwork-example"
-repo-config:  "/home/max/devops/terraform-teamwork-example/server.yaml"
