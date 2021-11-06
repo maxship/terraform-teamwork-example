@@ -1,7 +1,11 @@
 projects:
-- name: terraform-teamwork-example
-  dir: .
-  workspace: ["prod", "stage"]
+- dir: .
+  workspace: stage
   autoplan:
-    when_modified: ["*.tf"]
+    when_modified: [ "*.tf" ]
+    enabled: true
+- dir: .
+  workspace: prod
+  autoplan:
+    when_modified: [ "*.tf" ]
     enabled: true
